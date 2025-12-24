@@ -33,11 +33,11 @@ def evaluador_cv(texto_cv: str, descripcion_puesto: str)->AnalisisCv:
                     }
                 )
 
-    except:
+    except Exception as e:
         return AnalisisCv(
             nombre_candidato="Error en procesamiento.",
             experiencia_anios=0,
-            habilidades_tecnicas=["Error al leer el PDF"],
+            habilidades_tecnicas=["Error al leer el PDF"+str(e)],
             education="",
             experiencia_relevante="",
             fortalezas=[""],

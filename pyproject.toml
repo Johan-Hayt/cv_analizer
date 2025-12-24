@@ -10,4 +10,5 @@ dependencies = [
     "langchain-core>=1.1.1",
     "langchain-openai>=1.1.0",
     "pypdf2>=3.0.1",
+    "streamlit>=1.52.2",
 ]
